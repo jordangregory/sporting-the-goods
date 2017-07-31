@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import data from "../data/data.js";
+import data from "../data/jerseyData.js";
 const styles = {
-  jerseyContainer: {
-    display: "flex"
-  },
   listItem: {
     listStyleType: "none"
   },
@@ -23,19 +20,30 @@ class Jerseys extends Component {
           </option>
         );
       });
+      let colors = jersey.color.map((color, index) => {
+        return (
+          <option key={index} value={color}>
+            {color}
+          </option>
+        );
+      });
 
       return (
         <div key={index}>
-          <div style={styles.jerseyContainer}>
+          <div>
             <ul>
+              <h3>Style:</h3>
+              <li style={styles.listItem}>
+                <img style={styles.jerseyPic} src={jersey.img} alt="jersey" />
+              </li>
               <li style={styles.listItem}>
                 Size: <select>{sizes}</select>
               </li>
               <li style={styles.listItem}>
-                Color: {jersey.color}
+                Color: <select>{colors}</select>
               </li>
               <li style={styles.listItem}>
-                <img style={styles.jerseyPic} src={jersey.img} alt="jersey" />
+                Price: {jersey.price}
               </li>
             </ul>
           </div>
