@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import data from "../data/jerseyData.js";
+
 const styles = {
   listItem: {
     listStyleType: "none"
@@ -45,6 +46,7 @@ class Jerseys extends Component {
               <li style={styles.listItem}>
                 Price: {jersey.price}
               </li>
+              <button>Add to cart</button>
             </ul>
           </div>
         </div>

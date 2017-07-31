@@ -1,26 +1,28 @@
 import React, { Component } from "react";
-import data from "../data/accessoriesData.js";
+import data from "../data/glovesData.js";
+import { Link } from "react-router-dom";
+
 const styles = {
   listItem: {
     listStyleType: "none"
   },
-  jerseyPic: {
+  glovesPic: {
     height: 200,
     width: 200
   }
 };
 
-class Accessories extends Component {
+class Gloves extends Component {
   render() {
-    let accessoriesData = data.map((jersey, index) => {
-      let sizes = jersey.sizes.map((size, index) => {
+    let glovesData = data.map((glove, index) => {
+      let gloves = glove.sizes.map((size, index) => {
         return (
           <option key={index} value={size}>
             {size}
           </option>
         );
       });
-      let colors = jersey.color.map((color, index) => {
+      let colors = glove.color.map((color, index) => {
         return (
           <option key={index} value={color}>
             {color}
@@ -32,19 +34,22 @@ class Accessories extends Component {
         <div key={index}>
           <div>
             <ul>
-              <h3>Style:</h3>
+              <h1>Style:</h1>
               <li style={styles.listItem}>
-                <img style={styles.jerseyPic} src={jersey.img} alt="jersey" />
+                <img style={styles.glovesPic} src={glove.img} alt="gloves" />
               </li>
               <li style={styles.listItem}>
-                Size: <select>{sizes}</select>
+                Size: <select>{gloves}</select>
               </li>
               <li style={styles.listItem}>
                 Color: <select>{colors}</select>
               </li>
               <li style={styles.listItem}>
-                Price: {jersey.price}
+                Price: {glove.price}
               </li>
+              <Link to="/description">
+                <button>Description</button>
+              </Link>
             </ul>
           </div>
         </div>
@@ -52,10 +57,10 @@ class Accessories extends Component {
     });
     return (
       <div>
-        {accessoriesData}
+        {glovesData}
       </div>
     );
   }
 }
 
-export default Accessories;
+export default Gloves;

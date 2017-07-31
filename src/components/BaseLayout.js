@@ -15,7 +15,7 @@ const styles = {
   }
 };
 
-class Layout extends Component {
+class BaseLayout extends Component {
   render() {
     return (
       <div style={styles.backgroundContainer}>
@@ -36,17 +36,17 @@ class Layout extends Component {
             <NavLink
               style={styles.navigation}
               activeStyle={{ backgroundColor: "green", color: "white" }}
-              to="/equipment"
+              to="/gloves"
             >
-              Equipment
+              Gloves
             </NavLink>
 
             <NavLink
               style={styles.navigation}
               activeStyle={{ backgroundColor: "green", color: "white" }}
-              to="/accessories"
+              to="/sticks"
             >
-              Accessories
+              Sticks
             </NavLink>
 
             <NavLink
@@ -83,4 +83,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default BaseLayout;
