@@ -35,7 +35,10 @@ class BaseLayout extends Component {
           <div>
             <NavLink
               style={styles.navigation}
-              activeStyle={{ backgroundColor: "green", color: "white" }}
+              activeStyle={{
+                backgroundColor: "green",
+                color: "white"
+              }}
               to="/gloves"
             >
               Gloves

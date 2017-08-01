@@ -4,9 +4,8 @@ import Home from "./components/Home.js";
 import BaseLayout from "./components/BaseLayout.js";
 import Contact from "./components/Contact.js";
 import About from "./components/About.js";
-import Sticks from "./components/Sticks.js";
-import Jerseys from "./components/Jerseys.js";
-import Gloves from "./components/Gloves.js";
+import ProductDetail from "./components/Details";
+import ProductLine from "./components/productLine";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -16,12 +15,11 @@ class App extends Component {
         <BrowserRouter>
           <BaseLayout>
             <Switch>
-              <Route path="/contact" component={Contact} />
-              <Route path="/jerseys" component={Jerseys} />
-              <Route path="/sticks" component={Sticks} />
-              <Route path="/gloves" component={Gloves} />
-              <Route path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/about" component={About} />
               <Route exact path="/" component={Home} />
+              <Route path="/:productLine/:id" component={ProductDetail} />
+              <Route path="/:productLine" component={ProductLine} />
             </Switch>
           </BaseLayout>
         </BrowserRouter>
