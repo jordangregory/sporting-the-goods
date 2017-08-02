@@ -2,7 +2,7 @@ const productData = {
   gloves: [
     {
       id: 1,
-      name: "coolgloves",
+      name: "Basic Gloves",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "gloves.jpg",
@@ -11,7 +11,7 @@ const productData = {
     },
     {
       id: 2,
-      name: "evencoolergloves",
+      name: "Baller Gloves",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "gloves2.jpg",
@@ -20,7 +20,7 @@ const productData = {
     },
     {
       id: 3,
-      name: "thecoolestgloves",
+      name: "Best Gloves Around",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "gloves3.jpeg",
@@ -31,7 +31,7 @@ const productData = {
   sticks: [
     {
       id: 1,
-      name: "powerstick",
+      name: "Power Stick",
       skillLevel: ["beginner", "intermediate", "advanced"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "stick1.jpg",
@@ -40,7 +40,7 @@ const productData = {
     },
     {
       id: 2,
-      name: "stupidstick",
+      name: "Mega Stick",
       skillLevel: ["beginner", "intermediate", "advanced"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "stick2.jpg",
@@ -49,7 +49,7 @@ const productData = {
     },
     {
       id: 3,
-      name: ";alsdfjstick",
+      name: "Ultra Stick",
       skillLevel: ["beginner", "intermediate", "advanced"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "stick3.jpeg",
@@ -60,7 +60,7 @@ const productData = {
   jerseys: [
     {
       id: 1,
-      name: "dajersey",
+      name: "Plain Practice Jersey",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "jerseyStyle1.jpg",
@@ -69,7 +69,7 @@ const productData = {
     },
     {
       id: 2,
-      name: "disjersey",
+      name: "Rib Stripe Practice Jersey",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "jerseyStyle2.jpeg",
@@ -78,7 +78,7 @@ const productData = {
     },
     {
       id: 3,
-      name: "datjersey",
+      name: "Shoulder Stripe Practice Jersey",
       sizes: ["small", "medium", "large", "extra large"],
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "jerseyStyle3.jpg",

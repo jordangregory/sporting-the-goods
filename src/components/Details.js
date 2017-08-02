@@ -15,9 +15,11 @@ class Details extends Component {
     return (
       <div>
         <h1>Details</h1>
-        <h3>
-          {product.description}
-        </h3>
+        <ul>
+          <p>
+            {product.description}
+          </p>
+        </ul>
       </div>
     );
   }
