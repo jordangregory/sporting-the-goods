@@ -5,10 +5,12 @@ const styles = {
     background: "#FFB81C"
   },
   navigation: {
+    display: "inline-block",
     textDecoration: "none",
     background: "#FFB81C",
     marginRight: 10,
-    color: "#041E42"
+    color: "#041E42",
+    padding: 10
   },
   homePage: {
     textAlign: "center"

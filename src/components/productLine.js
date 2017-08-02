@@ -54,7 +54,7 @@ class Gloves extends Component {
         );
       });
 
-      let linkUrl = `./${productLine}/${glove.name}`;
+      let linkUrl = `./${productLine}/${index}`;
       return (
         <div style={styles.container} key={index}>
           <div>

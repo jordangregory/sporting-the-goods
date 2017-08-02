@@ -26,3 +26,15 @@
     transform: rotate(360deg);
   }
 }
+
+.contactContainer {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  background: black;
+  color: #ffb81c;
+  border: 1px solid black;
+  border-radius: 250px;
+  width: 500px;
+  height: 500px;
+}
