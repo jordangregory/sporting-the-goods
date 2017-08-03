@@ -7,7 +7,8 @@ const productData = {
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "gloves.jpg",
       price: "$30.00",
-      description: "first glove description"
+      description:
+        "This glove will cover the basic needs for your first time hockey player "
     },
     {
       id: 2,
@@ -16,7 +17,7 @@ const productData = {
       color: ["red", "blue", "green", "yellow", "pink", "black", "white"],
       img: "gloves2.jpg",
       price: "$40.00",
-      description: "second glove description"
+      description: "If you're looking for "
     },
     {
       id: 3,

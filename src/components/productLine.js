@@ -8,10 +8,15 @@ const styles = {
   },
   picture: {
     height: 200,
-    width: 200
+    width: 200,
+    borderRadius: "10%"
   },
-  container: {
-    display: "flex"
+  holder: {
+    background: "#041E42",
+    padding: 10,
+    borderRadius: "10%",
+    color: "#ffb81c",
+    textAlign: "center"
   }
 };
 
@@ -56,22 +61,25 @@ class Gloves extends Component {
 
       let linkUrl = `./${productLine}/${index}`;
       return (
-        <div style={styles.container} key={index}>
-          <div>
-            <div>
-              <ul>
-                <h1>
-                  Name: {glove.name}
-                </h1>
+        <div key={index}>
+          <ul>
+            <h1>
+              Name: {glove.name}
+            </h1>
+            <div className="container">
+              <div style={styles.holder}>
                 <li style={styles.listItem}>
                   <img style={styles.picture} src={glove.img} alt="gloves" />
                 </li>
+
                 <li style={styles.listItem}>
                   {detailTitle}: <select>{gloves}</select>
                 </li>
+
                 <li style={styles.listItem}>
                   Color: <select>{colors}</select>
                 </li>
+
                 <li style={styles.listItem}>
                   Price: {glove.price}
                 </li>
@@ -79,9 +87,9 @@ class Gloves extends Component {
                 <button>
                   <Link to={linkUrl}>Details</Link>
                 </button>
-              </ul>
+              </div>
             </div>
-          </div>
+          </ul>
         </div>
       );
     });

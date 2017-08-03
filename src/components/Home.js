@@ -49,7 +49,7 @@ class Home extends Component {
           Goods
         </p>
 
-        <div>
+        <div className="homePageIcons">
           <div className="stickHomePage">
             <Link to="/gloves">
               <img style={styles.gloveImage} src="gloves.jpg" alt="gloves1" />

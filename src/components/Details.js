@@ -1,5 +1,22 @@
 import React, { Component } from "react";
 import productData from "../data/productData";
+
+const styles = {
+  background: {
+    backgroundImage: "url(/outsideHockey.jpg)",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    backgroundAttach: "fixed",
+    backgroundSize: "cover",
+    minHeight: "100vh"
+  },
+  paragraph: {
+    backgroundColor: "#ffb81c",
+    color: "#041E42",
+    width: "50%"
+  }
+};
+
 class Details extends Component {
   constructor(props) {
     super(props);
@@ -30,13 +47,13 @@ class Details extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.background}>
         <h1>Details</h1>
         <ul>
-          <p>
+          <p style={styles.paragraph}>
             {this.state.product.name}
           </p>
-          <p>
+          <p style={styles.paragraph}>
             {this.state.product.description}
           </p>
         </ul>

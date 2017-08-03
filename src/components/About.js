@@ -8,6 +8,11 @@ const styles = {
     backgroundAttach: "fixed",
     backgroundSize: "cover",
     minHeight: "100vh"
+  },
+  paragraph: {
+    backgroundColor: "#ffb81c",
+    color: "#041E42",
+    width: "50%"
   }
 };
 
@@ -16,15 +21,15 @@ class About extends Component {
     return (
       <div style={styles.background}>
         <h1>ABOUT</h1>
-        <p>
+        <p style={styles.paragraph}>
           Sporting the Goods is a hockey equipment company founded by Jordan
           Gregory once he learned that he would have to create a fake ecommerce
           site. This company sells 9 total items, all of which were taken from
           other sites. Although there are selectors for color and size, you are
-          actually not able to select those particular sizes. This was to
-          demonstrate how to make a select tag with options.
+          actually not able to select those particular sizes or colors. This was
+          to demonstrate how to make a select tag with options.
         </p>
-        <p>
+        <p style={styles.paragraph}>
           Also, there is actually no way to purchase these items, as this is
           part of hard mode. Jordan has never attempted hard mode due to the
           fact that he feels like coding is above his capabilities, and
@@ -40,7 +45,7 @@ class About extends Component {
           ability to show that he is a great communicator and willing to
           continue to learn, given the opportunity.
         </p>
-        <p>
+        <p style={styles.paragraph}>
           Also, Jordan loves hockey, as hockey has played an important role is
           Jordan's life ever since he moved to Nashville. He has always been a
           loyal support of "his" teams, and now, is more loyal to the Nashville

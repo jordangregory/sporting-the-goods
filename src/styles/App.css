@@ -37,4 +37,13 @@
   border-radius: 250px;
   width: 500px;
   height: 500px;
+  position: center;
+}
+
+.homePageIcons {
+  display: flex;
+}
+
+.container {
+  display: flex;
 }
