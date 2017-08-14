@@ -8,7 +8,9 @@ const styles = {
     backgroundPosition: "center center",
     backgroundAttach: "fixed",
     backgroundSize: "cover",
-    minHeight: "100vh"
+    minHeight: "100vh",
+    fontFamily: "Permanent Marker",
+    textAlign: "center"
   },
   gloveImage: {
     height: 300,
@@ -36,6 +38,10 @@ const styles = {
     border: "1px solid black",
     background: "black",
     borderRadius: 50
+  },
+  homeHeader: {
+    margin: 0,
+    fontSize: 50
   }
 };
 
@@ -43,11 +49,7 @@ class Home extends Component {
   render() {
     return (
       <div style={styles.background}>
-        <h1>Welcome to Sporting the Goods!</h1>
-        <p>
-          Here at Sporting the Goods, we're good at two thing: Sporting and The
-          Goods
-        </p>
+        <h1 style={styles.homeHeader}>Welcome to Top Shelf Equipment!</h1>
 
         <div className="homePageIcons">
           <div className="stickHomePage">

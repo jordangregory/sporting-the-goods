@@ -8,9 +8,10 @@ const styles = {
     display: "inline-block",
     textDecoration: "none",
     background: "#FFB81C",
-    marginRight: 10,
     color: "#041E42",
-    padding: 10
+    padding: 10,
+    borderRight: "1px solid black",
+    borderBottom: "1px solid black"
   },
   homePage: {
     textAlign: "center"
@@ -31,7 +32,7 @@ class BaseLayout extends Component {
             exact
             to="/"
           >
-            Sporting the Hockey Goods
+            Top Shelf Equipement - Home
           </NavLink>
 
           <div>
