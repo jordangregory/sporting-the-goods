@@ -15,28 +15,22 @@ const styles = {
   gloveImage: {
     height: 300,
     width: 300,
-    padding: 10,
     marginLeft: 20,
-    border: "1px solid black",
-    background: "black",
+    boxShadow: "0px 0px 5px black",
     borderRadius: 50
   },
   stickImage: {
     height: 300,
     width: 300,
-    padding: 10,
     marginLeft: 20,
-    border: "1px solid black",
-    background: "black",
+    boxShadow: "0px 0px 5px black",
     borderRadius: 50
   },
   jerseyImage: {
     height: 300,
     width: 300,
-    padding: 10,
     marginLeft: 20,
-    border: "1px solid black",
-    background: "black",
+    boxShadow: "0px 0px 5px black",
     borderRadius: 50
   },
   homeHeader: {

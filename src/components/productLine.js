@@ -13,9 +13,14 @@ const styles = {
   },
   holder: {
     background: "#041E42",
-    padding: 10,
-    borderRadius: "10%",
+    padding: 30,
     color: "#ffb81c",
+    textAlign: "center",
+    width: "50%",
+    margin: "auto",
+    boxSizing: "borderBox"
+  },
+  productName: {
     textAlign: "center"
   }
 };
@@ -63,7 +68,7 @@ class Gloves extends Component {
       return (
         <div key={index}>
           <ul>
-            <h1>
+            <h1 style={styles.productName}>
               Name: {glove.name}
             </h1>
             <div className="container">
