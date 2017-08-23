@@ -15,7 +15,7 @@ class Contact extends Component {
       <div style={styles.background}>
         <div className="contactContainer">
           <h1>CONTACT US:</h1>
-          <h2>Sporting the Goods</h2>
+          <h2>Top Shelf Equipment</h2>
           <h2>Address:</h2>
           <h3>
             613 Ewing Ave.<br />Nashville, TN 37203
