@@ -41,7 +41,7 @@ class About extends Component {
           <p style={styles.paragraph}>
             Also, Jordan loves hockey, as hockey has played an important role is
             Jordan's life ever since he moved to Nashville. He has always been a
-            loyal support of "his" teams, and now, is more loyal to the
+            loyal supporter of "his" teams, and now, is more loyal to the
             Nashville Predators than most of his other teams that he pulls for.
           </p>
         </div>
